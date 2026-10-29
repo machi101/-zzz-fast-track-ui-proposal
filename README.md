@@ -14,4 +14,3 @@ Create a repository named `zzz-fast-track-ui-proposal`, upload `index.html` and 
 
 `index.html` contains the interface markup, styling, and interaction code in one file. Icons load from a version-pinned [Lucide](https://lucide.dev/) CDN; there is no build step, API key, or private configuration. The two tasks and their status labels are examples for discussion. Feedback is prepared locally and is never posted automatically.
 
-The narrated walkthrough can be linked in the forum separately; it is not needed to run the site. No video, captured screenshots, render scripts, or recording frames are part of this source repository.
