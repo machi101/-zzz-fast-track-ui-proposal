@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive community proposal for the ZZZ Fast track UI.">
+  <title>ZZZ Fast Track UI Proposal</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #101014; color: #efeff5; font: 14px/1.5 system-ui, sans-serif; }
+    .demo-shell { max-width: 1320px; margin: auto; padding: 24px; }
+    .demo-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+    .demo-head h1 { font-size: 18px; font-weight: 600; margin: 0; }
+    .demo-head p { margin: 3px 0 0; color: #aaaabb; }
+    .demo-views { display: flex; gap: 8px; }
+    .demo-views button { min-height: 44px; padding: 8px 16px; border: 1px solid #555460; border-radius: 8px; background: #202027; color: #efeff5; font: inherit; cursor: pointer; }
+    .demo-views button[aria-pressed="true"] { background: #3b2d58; border-color: #bea9f5; }
+    .demo-views button:focus-visible { outline: 2px solid #bea9f5; outline-offset: 3px; }
+    #ft-concept [data-variant][hidden] { display: none !important; }
+    @media (max-width: 730px) { .demo-shell { padding: 12px; } }
+  </style>
+  <script defer src="https://unpkg.com/lucide@1.61.0/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <div class="demo-shell">
+    <div class="demo-head">
+      <div><h1>Fast track UI proposal</h1><p>Community concept · illustrative task states · no live changes</p></div>
+      <div class="demo-views" role="group" aria-label="Preview layout">
+        <button type="button" data-view="Desktop" aria-pressed="true">Desktop</button>
+        <button type="button" data-view="Mobile" aria-pressed="false">Mobile</button>
+      </div>
+    </div>
+<div id="ft-concept" class="viz-carousel" aria-label="Fast track desktop and mobile mockups"><section data-variant="Desktop" aria-label="Desktop Fast track layout"><div class="ft-stage"><div class="ft-app ">
+<header class="ft-top"><span class="ft-logo">zzz</span><span class="ft-brand">ZZZ community</span><nav class="ft-crumb" aria-label="Breadcrumb"><a href="https://zzz.protocol.link/task" target="_blank" rel="noopener">← Back to Work</a><span aria-current="page"> / Fast track</span></nav><span class="ft-concept-label">Concept · example states</span></header>
+<div class="ft-shell"><nav class="ft-rail" aria-label="Community navigation"><a href="https://zzz.protocol.link/" target="_blank" rel="noopener" aria-label="Open live Timeline"><i data-lucide="messages-square" aria-hidden="true"></i><span>Timeline</span></a><a href="https://zzz.protocol.link/task" target="_blank" rel="noopener" aria-label="Open live Work"><i data-lucide="list-checks" aria-hidden="true"></i><span>Work</span></a><span class="ft-current" aria-current="page"><i data-lucide="zap" aria-hidden="true"></i><span>Fast track</span></span></nav>
+<main class="ft-main"><div class="ft-heading"><div><h1>Fast track</h1><p class="ft-subtitle">Small improvements. Clear ways to help.</p></div><a class="ft-source" href="https://zzz.protocol.link/task/a1228cc3-dbba-4e50-ba3c-e93c42d9bddc?reply=108734048637026304#reply-108734048637026304" target="_blank" rel="noopener">Design discussion ↗</a></div>
+<section class="ft-batch" aria-label="Fast Track Batch 1">
+<header class="ft-batch-head"><div class="ft-eyebrow">Current batch</div><div class="ft-lineup"><h2>Fast Track Batch 1</h2><span class="ft-tag ft-ready"><i data-lucide="flask-conical" aria-hidden="true"></i> Preview available</span></div><p class="ft-meta">2 tasks · 1 ready for community testing</p></header>
+<div class="ft-warning"><i data-lucide="flask-conical" aria-hidden="true"></i><strong>Test version—not live yet</strong><span>Only marked tasks are included.</span></div>
+<div class="ft-body">
+<article class="ft-task"><button id="ft-emoji-1" class="ft-task-button cursor-interaction" type="button" data-task="emoji" aria-expanded="true" aria-controls="ft-emoji-panel-1"><span class="ft-tag ft-ready"><i data-lucide="circle-check" aria-hidden="true"></i> Ready to test · in preview</span><span class="ft-task-title">Fix the emoji icon in dark mode</span><span class="ft-help"><span class="ft-help-label">Help needed · </span>Check visibility on desktop and mobile</span><span class="ft-task-action">Testing instructions <i data-lucide="chevron-down" aria-hidden="true"></i></span></button>
+<section id="ft-emoji-panel-1" class="ft-detail" data-detail="emoji" aria-labelledby="ft-emoji-1">
+<div class="ft-kicker"><i data-lucide="clipboard-check" aria-hidden="true"></i> Community testing</div><h3>Fix the emoji icon in dark mode</h3><p class="ft-description">The emoji button should stay visible and readable against the message input background.</p><p class="ft-inclusion">✓ This change is included in the test preview.</p>
+<details class="ft-instructions" open><summary>Testing instructions</summary><ol class="ft-steps"><li><div><strong>Try this</strong><span>Open the preview in dark mode. Find the emoji button beside the message field and open it.</span></div></li><li><div><strong>Expected result</strong><span>The icon is easy to see, stays inside the input, and opens the picker on desktop and mobile.</span></div></li><li><div><strong>Report here</strong><span>Draft your result below, then copy it to the task discussion. Add a screenshot there if the check fails.</span></div></li></ol></details>
+<div class="ft-actions"><button class="ft-button ft-primary cursor-interaction" type="button" data-action="preview" aria-expanded="false" aria-controls="ft-preview-1"><i data-lucide="flask-conical" aria-hidden="true"></i> Sample preview</button><button class="ft-button cursor-interaction" type="button" data-action="feedback" aria-expanded="false" aria-controls="ft-feedback-1">Draft feedback</button></div><p class="ft-fine">Interactive sample · nothing is posted automatically.</p>
+<section id="ft-preview-1" class="ft-demo" data-panel="preview" hidden>
+<div class="ft-preview-head"><h3>Sample preview</h3><span class="ft-fine">Message input · example only</span></div>
+<p class="ft-description">Try the emoji button, then return to the task to describe what happened.</p>
+<div class="ft-compose"><input aria-label="Example message" placeholder="Write a message…"><button type="button" class="ft-emoji-button cursor-interaction" data-action="emoji-picker" aria-label="Open emoji picker" aria-expanded="false" aria-controls="ft-picker-1"><i data-lucide="smile" aria-hidden="true"></i></button></div>
+<div id="ft-picker-1" class="ft-emojis" hidden><button class="cursor-interaction" type="button" data-emoji="🙂" aria-label="Insert smiling face">🙂</button><button class="cursor-interaction" type="button" data-emoji="💜" aria-label="Insert purple heart">💜</button><button class="cursor-interaction" type="button" data-emoji="💤" aria-label="Insert sleep symbol">💤</button></div>
+<div class="ft-actions"><button class="ft-button cursor-interaction" type="button" data-action="return-task"><i data-lucide="arrow-left" aria-hidden="true"></i> Return to task</button></div></section>
+<form id="ft-feedback-1" class="ft-demo" data-panel="feedback" hidden>
+<h3>Draft feedback</h3><p class="ft-fine">Emoji icon · Fast Track Batch 1</p>
+<label class="ft-field">Device and browser<input name="device" placeholder="e.g. iPhone · Safari" required maxlength="120"></label>
+<label class="ft-field">Test result<select name="result" required><option value="" selected disabled>Choose a result</option><option>Works as expected</option><option>Found an issue</option><option>Could not complete the test</option></select></label>
+<label class="ft-field">What happened?<textarea name="notes" placeholder="What you tried, expected result, actual result…" required maxlength="3000"></textarea></label>
+<button class="ft-button ft-primary cursor-interaction" type="button" data-action="build-feedback">Build feedback draft</button>
+<div class="ft-draft-output" hidden><label class="ft-field">Draft to copy<textarea class="ft-copy-text" name="draft" readonly rows="8"></textarea></label>
+<div class="ft-actions"><button class="ft-button ft-primary cursor-interaction" type="button" data-action="copy-feedback">Copy feedback</button><a class="ft-button" href="https://zzz.protocol.link/task/42e6e496-4ad5-434a-8a14-2e101d82e260#task-comments" target="_blank" rel="noopener">Open task discussion ↗</a></div>
+<p class="ft-fine">Paste the draft into the discussion to share it. This sample is labelled as a prototype test.</p></div>
+<p class="ft-status" role="status" aria-live="polite"></p>
+</form><p class="ft-discussion-link"><a href="https://zzz.protocol.link/task/42e6e496-4ad5-434a-8a14-2e101d82e260#task-comments" target="_blank" rel="noopener">View emoji task discussion ↗</a></p>
+
+</section></article>
+<article class="ft-task"><button id="ft-topics-1" class="ft-task-button cursor-interaction" type="button" data-task="topics" aria-expanded="false" aria-controls="ft-topics-panel-1"><span class="ft-tag ft-building"><i data-lucide="loader" aria-hidden="true"></i> In progress · not in preview</span><span class="ft-task-title">Smooth topic expansion and vote feedback</span><span class="ft-help">No input needed right now</span><span class="ft-task-action">View task details <i data-lucide="chevron-down" aria-hidden="true"></i></span></button>
+<section id="ft-topics-panel-1" class="ft-detail" data-detail="topics" aria-labelledby="ft-topics-1" hidden><div class="ft-kicker"><i data-lucide="hammer" aria-hidden="true"></i> Work in progress</div><h3>Smooth topic expansion and vote feedback</h3><p class="ft-description">Topic lists should open smoothly and voting should give clear feedback. This change is still being prepared.</p><p class="ft-inclusion ft-exclusion">− This change is not included in the preview.</p><div class="ft-demo"><h3>No input needed right now</h3><p class="ft-description">Testing instructions will appear when this task has a reviewable preview. You can still follow the discussion.</p></div><div class="ft-actions"><a class="ft-button" href="https://zzz.protocol.link/task/f0d2e7b8-f11d-4252-bd4b-46cd96cc1011" target="_blank" rel="noopener">View task discussion ↗</a></div><p class="ft-fine">Opens the existing ZZZ forum task.</p></section></article>
+</div></section><footer class="ft-footer"><span>Deployment follows facilitator review.</span><span>Mockup · no live changes</span></footer></main></div></div></div></section><section data-variant="Mobile" aria-label="Mobile Fast track layout" hidden><div class="ft-stage ft-mobile-stage viz-dotted-background"><div class="ft-app ft-mobile">
+<header class="ft-top"><span class="ft-logo">zzz</span><span class="ft-brand">ZZZ community</span><nav class="ft-crumb" aria-label="Breadcrumb"><a href="https://zzz.protocol.link/task" target="_blank" rel="noopener">← Back to Work</a><span aria-current="page"> / Fast track</span></nav><span class="ft-concept-label">Concept · example states</span></header>
+<div class="ft-shell"><nav class="ft-rail" aria-label="Community navigation"><a href="https://zzz.protocol.link/" target="_blank" rel="noopener" aria-label="Open live Timeline"><i data-lucide="messages-square" aria-hidden="true"></i><span>Timeline</span></a><a href="https://zzz.protocol.link/task" target="_blank" rel="noopener" aria-label="Open live Work"><i data-lucide="list-checks" aria-hidden="true"></i><span>Work</span></a><span class="ft-current" aria-current="page"><i data-lucide="zap" aria-hidden="true"></i><span>Fast track</span></span></nav>
+<main class="ft-main"><div class="ft-heading"><div><h1>Fast track</h1><p class="ft-subtitle">Small improvements. Clear ways to help.</p></div><a class="ft-source" href="https://zzz.protocol.link/task/a1228cc3-dbba-4e50-ba3c-e93c42d9bddc?reply=108734048637026304#reply-108734048637026304" target="_blank" rel="noopener">Design discussion ↗</a></div>
+<section class="ft-batch" aria-label="Fast Track Batch 1">
+<header class="ft-batch-head"><div class="ft-eyebrow">Current batch</div><div class="ft-lineup"><h2>Fast Track Batch 1</h2><span class="ft-tag ft-ready"><i data-lucide="flask-conical" aria-hidden="true"></i> Preview available</span></div><p class="ft-meta">2 tasks · 1 ready for community testing</p></header>
+<div class="ft-warning"><i data-lucide="flask-conical" aria-hidden="true"></i><strong>Test version—not live yet</strong><span>Only marked tasks are included.</span></div>
+<div class="ft-body">
+<article class="ft-task"><button id="ft-emoji-2" class="ft-task-button cursor-interaction" type="button" data-task="emoji" aria-expanded="false" aria-controls="ft-emoji-panel-2"><span class="ft-tag ft-ready"><i data-lucide="circle-check" aria-hidden="true"></i> Ready to test · in preview</span><span class="ft-task-title">Fix the emoji icon in dark mode</span><span class="ft-help"><span class="ft-help-label">Help needed · </span>Check visibility on desktop and mobile</span><span class="ft-task-action">Testing instructions <i data-lucide="chevron-down" aria-hidden="true"></i></span></button>
+<section id="ft-emoji-panel-2" class="ft-detail" data-detail="emoji" aria-labelledby="ft-emoji-2" hidden>
+<div class="ft-kicker"><i data-lucide="clipboard-check" aria-hidden="true"></i> Community testing</div><h3>Fix the emoji icon in dark mode</h3><p class="ft-description">The emoji button should stay visible and readable against the message input background.</p><p class="ft-inclusion">✓ This change is included in the test preview.</p>
+<details class="ft-instructions" open><summary>Testing instructions</summary><ol class="ft-steps"><li><div><strong>Try this</strong><span>Open the preview in dark mode. Find the emoji button beside the message field and open it.</span></div></li><li><div><strong>Expected result</strong><span>The icon is easy to see, stays inside the input, and opens the picker on desktop and mobile.</span></div></li><li><div><strong>Report here</strong><span>Draft your result below, then copy it to the task discussion. Add a screenshot there if the check fails.</span></div></li></ol></details>
+<div class="ft-actions"><button class="ft-button ft-primary cursor-interaction" type="button" data-action="preview" aria-expanded="false" aria-controls="ft-preview-2"><i data-lucide="flask-conical" aria-hidden="true"></i> Sample preview</button><button class="ft-button cursor-interaction" type="button" data-action="feedback" aria-expanded="false" aria-controls="ft-feedback-2">Draft feedback</button></div><p class="ft-fine">Interactive sample · nothing is posted automatically.</p>
+<section id="ft-preview-2" class="ft-demo" data-panel="preview" hidden>
+<div class="ft-preview-head"><h3>Sample preview</h3><span class="ft-fine">Message input · example only</span></div>
+<p class="ft-description">Try the emoji button, then return to the task to describe what happened.</p>
+<div class="ft-compose"><input aria-label="Example message" placeholder="Write a message…"><button type="button" class="ft-emoji-button cursor-interaction" data-action="emoji-picker" aria-label="Open emoji picker" aria-expanded="false" aria-controls="ft-picker-2"><i data-lucide="smile" aria-hidden="true"></i></button></div>
+<div id="ft-picker-2" class="ft-emojis" hidden><button class="cursor-interaction" type="button" data-emoji="🙂" aria-label="Insert smiling face">🙂</button><button class="cursor-interaction" type="button" data-emoji="💜" aria-label="Insert purple heart">💜</button><button class="cursor-interaction" type="button" data-emoji="💤" aria-label="Insert sleep symbol">💤</button></div>
+<div class="ft-actions"><button class="ft-button cursor-interaction" type="button" data-action="return-task"><i data-lucide="arrow-left" aria-hidden="true"></i> Return to task</button></div></section>
+<form id="ft-feedback-2" class="ft-demo" data-panel="feedback" hidden>
+<h3>Draft feedback</h3><p class="ft-fine">Emoji icon · Fast Track Batch 1</p>
+<label class="ft-field">Device and browser<input name="device" placeholder="e.g. iPhone · Safari" required maxlength="120"></label>
+<label class="ft-field">Test result<select name="result" required><option value="" selected disabled>Choose a result</option><option>Works as expected</option><option>Found an issue</option><option>Could not complete the test</option></select></label>
+<label class="ft-field">What happened?<textarea name="notes" placeholder="What you tried, expected result, actual result…" required maxlength="3000"></textarea></label>
+<button class="ft-button ft-primary cursor-interaction" type="button" data-action="build-feedback">Build feedback draft</button>
+<div class="ft-draft-output" hidden><label class="ft-field">Draft to copy<textarea class="ft-copy-text" name="draft" readonly rows="8"></textarea></label>
+<div class="ft-actions"><button class="ft-button ft-primary cursor-interaction" type="button" data-action="copy-feedback">Copy feedback</button><a class="ft-button" href="https://zzz.protocol.link/task/42e6e496-4ad5-434a-8a14-2e101d82e260#task-comments" target="_blank" rel="noopener">Open task discussion ↗</a></div>
+<p class="ft-fine">Paste the draft into the discussion to share it. This sample is labelled as a prototype test.</p></div>
+<p class="ft-status" role="status" aria-live="polite"></p>
+</form><p class="ft-discussion-link"><a href="https://zzz.protocol.link/task/42e6e496-4ad5-434a-8a14-2e101d82e260#task-comments" target="_blank" rel="noopener">View emoji task discussion ↗</a></p>
+
+</section></article>
+<article class="ft-task"><button id="ft-topics-2" class="ft-task-button cursor-interaction" type="button" data-task="topics" aria-expanded="false" aria-controls="ft-topics-panel-2"><span class="ft-tag ft-building"><i data-lucide="loader" aria-hidden="true"></i> In progress · not in preview</span><span class="ft-task-title">Smooth topic expansion and vote feedback</span><span class="ft-help">No input needed right now</span><span class="ft-task-action">View task details <i data-lucide="chevron-down" aria-hidden="true"></i></span></button>
+<section id="ft-topics-panel-2" class="ft-detail" data-detail="topics" aria-labelledby="ft-topics-2" hidden><div class="ft-kicker"><i data-lucide="hammer" aria-hidden="true"></i> Work in progress</div><h3>Smooth topic expansion and vote feedback</h3><p class="ft-description">Topic lists should open smoothly and voting should give clear feedback. This change is still being prepared.</p><p class="ft-inclusion ft-exclusion">− This change is not included in the preview.</p><div class="ft-demo"><h3>No input needed right now</h3><p class="ft-description">Testing instructions will appear when this task has a reviewable preview. You can still follow the discussion.</p></div><div class="ft-actions"><a class="ft-button" href="https://zzz.protocol.link/task/f0d2e7b8-f11d-4252-bd4b-46cd96cc1011" target="_blank" rel="noopener">View task discussion ↗</a></div><p class="ft-fine">Opens the existing ZZZ forum task.</p></section></article>
+</div></section><footer class="ft-footer"><span>Deployment follows facilitator review.</span><span>Mockup · no live changes</span></footer></main></div></div></div></section></div><style>
+#ft-concept .ft-stage{min-height:800px}
+#ft-concept .ft-mobile-stage{display:flex;justify-content:center;padding:16px;box-sizing:border-box}
+#ft-concept .ft-app{--bg:light-dark(#f5f5f8,#0e0e11);--panel:light-dark(#ffffff,#17171c);--raised:light-dark(#f8f8fb,#202027);--line:light-dark(#dddde6,#34343e);--ink:light-dark(#24242c,#efeff5);--sub:light-dark(#616172,#aaaabb);--violet:light-dark(#6844ba,#bea9f5);--tint:light-dark(#efebf9,#2a2238);--green:light-dark(#216344,#99d9b7);--greenbg:light-dark(#e9f5ee,#1b3026);--amber:light-dark(#7f5915,#e7c58a);--amberbg:light-dark(#faf1df,#322b1f);font:400 14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:15px;overflow:hidden;min-width:0}
+#ft-concept .ft-app *{box-sizing:border-box}
+#ft-concept .ft-app [hidden]{display:none!important}
+#ft-concept .ft-app h1,#ft-concept .ft-app h2,#ft-concept .ft-app h3,#ft-concept .ft-app p{margin:0}
+#ft-concept .ft-app h1{font-size:26px;font-weight:500;letter-spacing:-.8px}
+#ft-concept .ft-app h2{font-size:18px;font-weight:500;letter-spacing:-.3px}
+#ft-concept .ft-app h3{font-size:15px;font-weight:500}
+#ft-concept .ft-app button,#ft-concept .ft-app input,#ft-concept .ft-app textarea,#ft-concept .ft-app select{font:inherit;color:inherit}
+#ft-concept .ft-app button:focus-visible,#ft-concept .ft-app a:focus-visible,#ft-concept .ft-app summary:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
+#ft-concept .ft-app a{color:var(--violet);text-underline-offset:3px}
+#ft-concept .ft-app svg{height:16px;width:16px;vertical-align:middle;flex-shrink:0}
+#ft-concept .ft-top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:16px 24px;border-bottom:1px solid var(--line);background:var(--panel)}
+#ft-concept .ft-logo{width:34px;height:34px;display:flex;align-items:center;justify-content:center;background:var(--ink);color:var(--panel);border-radius:10px;letter-spacing:-1px;font-weight:500}
+#ft-concept .ft-brand{font-weight:500}
+#ft-concept .ft-crumb{color:var(--sub);font-size:12px}
+#ft-concept .ft-concept-label{color:var(--sub);font-size:12px;letter-spacing:.4px;margin-left:auto}
+#ft-concept .ft-shell{display:grid;grid-template-columns:100px minmax(0,1fr)}
+#ft-concept .ft-rail{padding:24px 10px;display:flex;flex-direction:column;align-items:center;gap:20px;background:var(--panel);border-right:1px solid var(--line)}
+#ft-concept .ft-rail>a,#ft-concept .ft-rail>.ft-current{display:flex;width:78px;min-height:56px;flex-direction:column;gap:4px;align-items:center;justify-content:center;border-radius:9px;color:var(--sub);font-size:12px;text-decoration:none}
+#ft-concept .ft-rail .ft-current{color:var(--violet);background:var(--tint)}
+#ft-concept .ft-main{padding:26px;min-width:0}
+#ft-concept .ft-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:24px}
+#ft-concept .ft-subtitle{font-size:13px;color:var(--sub);margin-top:4px!important}
+#ft-concept .ft-source{font-size:12px}
+#ft-concept .ft-batch{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+#ft-concept .ft-batch-head{padding:20px}
+#ft-concept .ft-eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--violet);margin-bottom:7px}
+#ft-concept .ft-lineup{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+#ft-concept .ft-meta{font-size:12px;color:var(--sub);margin-top:7px!important}
+#ft-concept .ft-tag{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border-radius:5px;font-size:12px;white-space:normal;font-weight:500}
+#ft-concept .ft-ready{color:var(--green);background:var(--greenbg)}
+#ft-concept .ft-building{color:var(--amber);background:var(--amberbg)}
+#ft-concept .ft-warning{display:flex;align-items:center;gap:6px 12px;flex-wrap:wrap;background:var(--tint);padding:11px 20px;font-size:12px}
+#ft-concept .ft-warning strong{font-weight:500;color:var(--violet)}
+#ft-concept .ft-warning span{color:var(--sub)}
+#ft-concept .ft-body{display:grid;grid-template-columns:minmax(220px,.95fr) minmax(0,1fr);grid-template-rows:auto auto 1fr;gap:12px 0;padding:17px}
+#ft-concept .ft-task{display:contents}
+#ft-concept .ft-task-button{grid-column:1;text-align:left;border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:16px;width:100%;align-self:start}
+#ft-concept .ft-task-button[aria-expanded=true]{border-color:var(--violet);background:var(--raised)}
+#ft-concept .ft-task-button:hover{background:var(--raised)}
+#ft-concept .ft-task-title{display:block;font-size:14px;font-weight:500;margin:10px 0 8px}
+#ft-concept .ft-task-meta{display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--sub);gap:8px}
+#ft-concept .ft-help{display:block;margin-top:8px;font-size:14px;color:var(--sub)}
+#ft-concept .ft-help-label{font-weight:500;color:var(--ink)}
+#ft-concept .ft-task-action{display:flex;justify-content:space-between;align-items:center;color:var(--violet);font-size:12px;margin-top:13px}
+#ft-concept .ft-detail{grid-column:2;grid-row:1/span 3;margin-left:18px;padding:1px 0 0 18px;border-left:1px solid var(--line);min-width:0}
+#ft-concept .ft-kicker{font-size:12px;color:var(--sub);display:flex;align-items:center;gap:6px;margin-bottom:8px}
+#ft-concept .ft-description{font-size:14px;color:var(--sub);margin-top:8px!important}
+#ft-concept .ft-inclusion{font-size:12px;color:var(--green);margin:15px 0!important}
+#ft-concept .ft-exclusion{color:var(--amber)}
+#ft-concept .ft-instructions{margin:18px 0}
+#ft-concept .ft-instructions summary{font-size:13px;font-weight:500}
+#ft-concept .ft-steps{padding:0;list-style:none;counter-reset:step;margin:14px 0 0}
+#ft-concept .ft-steps li{counter-increment:step;display:grid;grid-template-columns:21px 1fr;gap:9px;font-size:14px;margin-bottom:13px}
+#ft-concept .ft-steps li:before{content:counter(step);display:flex;align-items:center;justify-content:center;border-radius:6px;width:21px;height:21px;background:var(--raised);color:var(--sub);font-size:12px}
+#ft-concept .ft-steps strong{display:block;font-weight:500;margin-bottom:3px}
+#ft-concept .ft-steps span{color:var(--sub)}
+#ft-concept .ft-actions{display:flex;gap:8px;flex-wrap:wrap;margin:17px 0 10px}
+#ft-concept .ft-button{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:14px!important;padding:9px 11px;min-height:44px;border:1px solid var(--line);border-radius:7px;background:var(--raised);text-decoration:none}
+#ft-concept .ft-button.ft-primary{background:var(--ink);color:var(--panel);border-color:var(--ink)}
+#ft-concept .ft-fine{font-size:12px;color:var(--sub)}
+#ft-concept .ft-demo{border:1px solid var(--line);border-radius:9px;padding:14px;margin-top:15px;background:var(--raised)}
+#ft-concept .ft-demo h3{font-size:13px;margin-bottom:5px}
+#ft-concept .ft-compose{display:flex;align-items:center;gap:8px;padding:9px;border:1px solid var(--line);border-radius:7px;background:var(--panel);margin-top:12px}
+#ft-concept .ft-compose input{border:0;background:transparent;min-width:0;width:100%;font-size:16px;min-height:44px}
+#ft-concept .ft-emoji-button{width:44px;min-width:44px;height:44px;background:transparent;border:0}
+#ft-concept .ft-emojis{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+#ft-concept .ft-emojis button{width:44px;height:44px;background:var(--panel);border:1px solid var(--line);border-radius:6px}
+#ft-concept .ft-field{display:block;font-size:12px;margin:12px 0}
+#ft-concept .ft-field input,#ft-concept .ft-field textarea,#ft-concept .ft-field select{display:block;width:100%;border:1px solid var(--line);border-radius:6px;background:var(--panel);padding:9px;margin-top:5px}
+#ft-concept .ft-field textarea{min-height:80px;resize:vertical}
+#ft-concept .ft-status{color:var(--green);font-size:12px;margin-top:10px!important}
+#ft-concept .ft-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-top:18px;color:var(--sub);font-size:12px}
+#ft-concept .ft-mobile{width:390px;max-width:100%}
+#ft-concept .ft-mobile .ft-shell{display:block}
+#ft-concept .ft-mobile .ft-rail{display:none}
+#ft-concept .ft-mobile .ft-main{padding:19px 13px}
+#ft-concept .ft-mobile .ft-top{padding:12px 15px;gap:10px}
+#ft-concept .ft-mobile .ft-concept-label{font-size:12px;max-width:100px;text-align:right}
+#ft-concept .ft-mobile .ft-heading{margin-bottom:18px}
+#ft-concept .ft-mobile .ft-batch-head{padding:16px}
+#ft-concept .ft-mobile .ft-warning{padding:10px 16px}
+#ft-concept .ft-mobile .ft-body{display:block;padding:12px}
+#ft-concept .ft-mobile .ft-task{display:block;margin-bottom:12px;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+#ft-concept .ft-mobile .ft-task-button{border:0;border-radius:0}
+#ft-concept .ft-mobile .ft-detail{margin:0;padding:16px;border:0;border-top:1px solid var(--line)}
+#ft-concept .ft-mobile .ft-detail>h3,#ft-concept .ft-mobile .ft-detail>.ft-description{display:none}
+@media(max-width:730px){
+#ft-concept .ft-stage{min-height:0}
+#ft-concept .ft-shell{display:block}
+#ft-concept .ft-rail{display:none}
+#ft-concept .ft-top{padding:13px 16px}
+#ft-concept .ft-main{padding:18px 13px}
+#ft-concept .ft-body{display:block;padding:12px}
+#ft-concept .ft-task{display:block;margin-bottom:12px;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+#ft-concept .ft-task-button{border:0;border-radius:0}
+#ft-concept .ft-detail{margin:0;padding:16px;border:0;border-top:1px solid var(--line)}
+#ft-concept .ft-detail>h3,#ft-concept .ft-detail>.ft-description{display:none}
+#ft-concept .ft-concept-label{font-size:12px;max-width:100px;text-align:right}
+}
+@media(pointer:coarse){#ft-concept .ft-button{min-height:44px}#ft-concept .ft-field input,#ft-concept .ft-field textarea,#ft-concept .ft-field select{font-size:16px}}
+
+#ft-concept .ft-crumb a{display:inline-flex;align-items:center;min-height:44px}
+#ft-concept .ft-crumb span{white-space:nowrap}
+#ft-concept .ft-field{font-size:14px}
+#ft-concept .ft-field input,#ft-concept .ft-field select,#ft-concept .ft-field textarea{font-size:16px;min-height:44px}
+#ft-concept .ft-discussion-link{margin-top:16px!important;font-size:13px}
+#ft-concept .ft-discussion-link a,#ft-concept .ft-source{display:inline-flex;align-items:center;min-height:44px}
+#ft-concept .ft-preview-head{display:flex;flex-direction:column;gap:3px}
+#ft-concept .ft-instructions summary{min-height:44px;align-content:center}
+#ft-concept .ft-mobile .ft-crumb{display:block;order:4;width:100%;font-size:13px}
+#ft-concept .ft-mobile .ft-source{display:inline-flex}
+#ft-concept .ft-mobile .ft-top{row-gap:0}
+#ft-concept .ft-mobile .ft-main{padding-top:15px}
+#ft-concept .ft-mobile-stage{padding:8px}
+#ft-concept .ft-copy-text{font-size:14px;line-height:1.5}
+#ft-concept .ft-app [data-copy-state="error"]{color:var(--ink)}
+#ft-concept .ft-task-action svg{transition:transform .15s}
+#ft-concept .ft-task-button[aria-expanded=true] .ft-task-action svg{transform:rotate(180deg)}
+@media(max-width:730px){
+#ft-concept .ft-crumb{display:block;order:4;width:100%;font-size:13px}
+#ft-concept .ft-top{row-gap:0}
+#ft-concept .ft-mobile-stage{padding:0}
+#ft-concept .ft-main{padding:15px 10px}
+#ft-concept .ft-detail{padding:14px 12px}
+#ft-concept .ft-batch-head{padding:16px}
+#ft-concept .ft-warning{padding:10px 16px}
+}
+@media(prefers-reduced-motion:reduce){#ft-concept .ft-task-action svg{transition:none}}
+</style><script>
+(()=>{
+const root=document.getElementById('ft-concept');
+const narrow=window.matchMedia('(max-width:730px)');
+root.querySelectorAll('.ft-app').forEach(app=>{
+const isMobile=()=>app.classList.contains('ft-mobile')||narrow.matches;
+const buttons=Array.from(app.querySelectorAll('[data-task]'));
+const panels=Array.from(app.querySelectorAll('[data-detail]'));
+let selected=isMobile()?null:'emoji';
+let lastSelected='emoji';
+function selectTask(key){
+  selected=key;
+  if(key)lastSelected=key;
+  buttons.forEach(b=>b.setAttribute('aria-expanded',String(b.dataset.task===key)));
+  panels.forEach(p=>p.hidden=p.dataset.detail!==key);
+}
+selectTask(selected);
+narrow.addEventListener('change',()=>{if(!isMobile()&&!selected)selectTask(lastSelected);});
+const form=app.querySelector('form');
+const output=form.querySelector('.ft-draft-output');
+const draft=form.elements.namedItem('draft');
+const status=form.querySelector('[role="status"]');
+function draftText(){
+  return [
+    'Prototype walkthrough — sample feedback (not a live-site test)',
+    'Task: Fix the emoji icon in dark mode',
+    'Batch: Fast Track Batch 1 (illustrative)',
+    'Environment: Sample preview in the Fast track UI mockup',
+    'Device and browser: '+form.elements.namedItem('device').value.trim(),
+    'Result: '+form.elements.namedItem('result').value,
+    '',
+    'What happened:',
+    form.elements.namedItem('notes').value.trim()
+  ].join('\n');
+}
+function refreshDraft(){draft.value=draftText();}
+function validateForm(){
+  ['device','notes'].forEach(name=>{
+    const field=form.elements.namedItem(name);
+    field.setCustomValidity(field.value.trim()?'':'Please enter a response.');
+  });
+  return form.reportValidity();
+}
+function closePicker(){
+  app.querySelector('.ft-emojis').hidden=true;
+  app.querySelector('[data-action="emoji-picker"]').setAttribute('aria-expanded','false');
+}
+function generateDraft(){
+  if(!validateForm())return;
+  refreshDraft();output.hidden=false;
+  status.dataset.copyState='';
+  status.textContent='Draft ready to copy. Nothing has been posted.';
+  draft.focus();
+}
+function togglePanel(key,opener){
+  closePicker();
+  const panel=app.querySelector('[data-panel="'+key+'"]');
+  const open=panel.hidden;
+  ['preview','feedback'].forEach(other=>{
+    const item=app.querySelector('[data-panel="'+other+'"]');
+    const trigger=app.querySelector('[data-action="'+other+'"]');
+    item.hidden=other===key?!open:true;
+    trigger.setAttribute('aria-expanded',String(!item.hidden));
+  });
+  if(open){
+    const focusTarget=key==='preview'?panel.querySelector('input'):panel.querySelector('input[name="device"]');
+    focusTarget.focus();
+  }else opener.focus();
+}
+function returnToTask(){
+  closePicker();
+  app.querySelector('[data-panel="preview"]').hidden=true;
+  const trigger=app.querySelector('[data-action="preview"]');
+  trigger.setAttribute('aria-expanded','false');
+  app.querySelector('.ft-instructions').open=true;
+  trigger.focus();
+}
+app.addEventListener('click',async e=>{
+  const task=e.target.closest('[data-task]');
+  if(task){
+    const key=task.dataset.task;
+    selectTask(isMobile()&&selected===key?null:key);
+    return;
+  }
+  const action=e.target.closest('[data-action]');
+  if(action){
+    const key=action.dataset.action;
+    if(key==='preview'||key==='feedback'){togglePanel(key,action);return;}
+    if(key==='return-task'){returnToTask();return;}
+    if(key==='build-feedback'){generateDraft();return;}
+    if(key==='emoji-picker'){
+      const picker=app.querySelector('.ft-emojis');
+      picker.hidden=!picker.hidden;
+      action.setAttribute('aria-expanded',String(!picker.hidden));
+      if(!picker.hidden)picker.querySelector('button').focus();
+      return;
+    }
+    if(key==='copy-feedback'){
+      if(!validateForm())return;
+      refreshDraft();
+      const text=draft.value;
+      status.textContent='';
+      status.dataset.copyState='';
+      try{
+        if(!navigator.clipboard||!navigator.clipboard.writeText)throw new Error('Clipboard unavailable');
+        await navigator.clipboard.writeText(text);
+        status.textContent='Copied. Open the task discussion and paste your draft when ready.';
+      }catch{
+        draft.focus();draft.select();
+        status.dataset.copyState='error';
+        status.textContent='Automatic copying is unavailable here. The draft is selected; copy it manually.';
+      }
+      return;
+    }
+  }
+  const emoji=e.target.closest('[data-emoji]');
+  if(emoji){
+    const input=app.querySelector('.ft-compose input');
+    input.value+=emoji.dataset.emoji;
+    app.querySelector('.ft-emojis').hidden=true;
+    app.querySelector('[data-action="emoji-picker"]').setAttribute('aria-expanded','false');
+    input.focus();
+  }
+});
+app.addEventListener('keydown',e=>{
+  if(e.key!=='Escape')return;
+  const detail=e.target.closest('[data-detail]');
+  if(!detail||detail.hidden)return;
+  const picker=app.querySelector('.ft-emojis');
+  if(!picker.hidden){
+    picker.hidden=true;
+    const trigger=app.querySelector('[data-action="emoji-picker"]');
+    trigger.setAttribute('aria-expanded','false');trigger.focus();return;
+  }
+  if(!app.querySelector('[data-panel="preview"]').hidden){returnToTask();return;}
+  const feedback=app.querySelector('[data-panel="feedback"]');
+  if(!feedback.hidden){
+    feedback.hidden=true;
+    const trigger=app.querySelector('[data-action="feedback"]');
+    trigger.setAttribute('aria-expanded','false');trigger.focus();
+  }
+});
+form.addEventListener('submit',e=>{e.preventDefault();generateDraft();});
+form.addEventListener('keydown',e=>{
+  if(e.key==='Enter'&&e.target.tagName==='INPUT'){e.preventDefault();generateDraft();}
+});
+form.addEventListener('input',()=>{
+  ['device','notes'].forEach(name=>form.elements.namedItem(name).setCustomValidity(''));
+  if(output.hidden)return;
+  refreshDraft();status.dataset.copyState='';
+  status.textContent='Draft updated. Copy it again to include these changes.';
+});
+});
+})();
+</script>
+
+  </div>
+  <script>
+    (() => {
+      const root = document.getElementById('ft-concept');
+      const buttons = [...document.querySelectorAll('.demo-views [data-view]')];
+      const sections = [...root.querySelectorAll('[data-variant]')];
+      function show(name) {
+        sections.forEach(section => { section.hidden = section.dataset.variant !== name; });
+        buttons.forEach(button => { button.setAttribute('aria-pressed', String(button.dataset.view === name)); });
+      }
+      buttons.forEach(button => button.addEventListener('click', () => show(button.dataset.view)));
+      show(matchMedia('(max-width:730px)').matches ? 'Mobile' : 'Desktop');
+      addEventListener('load', () => { if (window.lucide) lucide.createIcons({ attrs: { width: 16, height: 16 } }); });
+    })();
+  </script>
+</body>
+</html>
